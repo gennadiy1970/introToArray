@@ -1,123 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Array</title>
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Bad+Script"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
+      <section>
         <h2>Массивы</h2>
         <div class="img-wrp">
-            <img src="./img/array.svg" alt="array">
+            <img src="./img/railway-wagons.jpg" alt="railway wagons">
         </div>
+      </section>
+
+      <section>
+          <pre><code>
+let array = [ "A", "B", "C", "D"];
+
+</code></pre>
+        <div class="img-wrp">
+          <img src="./img/array.svg" alt="array" />
+        </div>
+          <pre><code>
+array[0] // "A"
+array[1] // "B"
+array[2] // "C"
+array[3] // "D"
+
+</code></pre>
+      </section>
     </div>
     <div class="wrapper">
-        <section>
-            <div>
-                <h4>Массив - это особая <i>структура данных</i></h4>
-                <p>Массив - это пары "<i class="handwriting">ключ-значение</i>".</p>
-                <p>Значения в массиве могут быть любого типа и в любом сочетании (в т.ч. массив и объект)</p>
-                <p>Ключ - это указатель позиции значения в некоторой структуре.</p>
-                <p>Ключ в массиве подобен ключу в строке - всегда начинается с <b>0</b></p>
-                <p>Длина массива определяется свойством <b>.length</b></p>
-                <p>Массив - это объект.</p>
-                <p>Объект - это значит передача по ссылке, а не по значению.</p>
-                <p>Проверка на массив <b>Array.isArray( <i class="handwriting">arr</i> )</b></p>
-            </div>
-
-
-        </section>
-        <section>
-
-            <table>
-                <caption>
-                    <h4>Синтаксис</h4>
-                </caption>
-                <tr>
-                    <th>литерал</th>
-                    <th>конструктор</th>
-                    <th>описание</th>
-                </tr>
-                <tr>
-                    <td>[]</td>
-                    <td>new Array()</td>
-                    <td>пустой массив</td>
-                </tr>
-                <tr>
-                    <td>[,,]</td>
-                    <td>new Array(3)</td>
-                    <td>массив без значений в три элемента</td>
-                </tr>
-                <tr>
-                    <td>[1, 2, 3]</td>
-                    <td>new Array(1, 2, 3)</td>
-                    <td>массива из элементов <i>number</i></td>
-                </tr>
-                <tr>
-                    <td>['<i class="handwriting">a</i>', '<i class="handwriting">b</i>', '<i class="handwriting">c</i>']</td>
-                    <td>new Array('<i class="handwriting">a</i>', '<i class="handwriting">b</i>', '<i class="handwriting">c</i>')</td>
-                    <td>массива из элементов <i>string</i></td>
-                </tr>
-                <tr>
-                    <td>[true, undefined, null]</td>
-                    <td>new Array(true, undefined, null)</td>
-                    <td>массива из элементов различных типов</td>
-                </tr>
-                <tr>
-                    <td>[[1,2,3], ['<i class="handwriting">a</i>', '<i class="handwriting">b</i>', '<i class="handwriting">c</i>'],
-                        [[[true]]]]
-                    </td>
-                    <td>new Array([1,2,3], ['<i class="handwriting">a</i>', '<i class="handwriting">b</i>', '<i class="handwriting">c</i>'],
-                        [[[true]]])
-                    </td>
-                    <td> массив массивов</td>
-                </tr>
-            </table>
-
-        </section>
+      <section>
+        <div>
+          <h4>Массив - это особая <i>структура данных</i></h4>
+          <p>Массив - это пары "<i class="handwriting">ключ-значение</i>".</p>
+          <p>
+            Значения в массиве могут быть любого типа и в любом сочетании (в
+            т.ч. массив и объект)
+          </p>
+          <p>Ключ - это указатель позиции значения в некоторой структуре.</p>
+          <p>
+            Ключ в массиве подобен ключу в строке - всегда начинается с <b>0</b>
+          </p>
+          <p>Длина массива определяется свойством <b>.length</b></p>
+          <p>Массив - это объект.</p>
+          <p>Объект - это значит передача по ссылке, а не по значению.</p>
+          <p>
+            Проверка на массив
+            <b>Array.isArray( <i class="handwriting">arr</i> )</b>
+          </p>
+        </div>
+      </section>
+      <section>
+        <table>
+          <caption>
+            <h4>Синтаксис</h4>
+          </caption>
+          <tr>
+            <th>литерал</th>
+            <th>конструктор</th>
+            <th>описание</th>
+          </tr>
+          <tr>
+            <td>[]</td>
+            <td>new Array()</td>
+            <td>пустой массив</td>
+          </tr>
+          <tr>
+            <td>[,,]</td>
+            <td>new Array(3)</td>
+            <td>массив без значений в три элемента</td>
+          </tr>
+          <tr>
+            <td>[1, 2, 3]</td>
+            <td>new Array(1, 2, 3)</td>
+            <td>массива из элементов <i>number</i></td>
+          </tr>
+          <tr>
+            <td>
+              ['<i class="handwriting">a</i>', '<i class="handwriting">b</i>',
+              '<i class="handwriting">c</i>']
+            </td>
+            <td>
+              new Array('<i class="handwriting">a</i>', '<i class="handwriting"
+                >b</i
+              >', '<i class="handwriting">c</i>')
+            </td>
+            <td>массива из элементов <i>string</i></td>
+          </tr>
+          <tr>
+            <td>[true, undefined, null]</td>
+            <td>new Array(true, undefined, null)</td>
+            <td>массива из элементов различных типов</td>
+          </tr>
+          <tr>
+            <td>
+              [[1,2,3], ['<i class="handwriting">a</i>', '<i class="handwriting"
+                >b</i
+              >', '<i class="handwriting">c</i>'], [[[true]]]]
+            </td>
+            <td>
+              new Array([1,2,3], ['<i class="handwriting">a</i>', '<i
+                class="handwriting"
+                >b</i
+              >', '<i class="handwriting">c</i>'], [[[true]]])
+            </td>
+            <td>массив массивов</td>
+          </tr>
+        </table>
+      </section>
     </div>
     <div class="wrapper">
-        <section>
-            <h4>CRUD для ячейки</h4>
-            <p>let arr = [];</p>
-            <p><i>arr.length</i> <span class="comment"> 0</span></p>
-            <h5>Create</h5>
-            <p> arr[10] = 'cell'</p>
-            <p><i>arr.length</i> <span class="comment"> 11</span></p>
-            <h5>Read</h5>
-            <p> arr[10] <span class="comment">cell</span></p>
-            <h5>Update </h5>
-            <p> arr[10] = 'arr cell'</p>
-            <h5>Delete </h5>
-            <p>delete arr[10]</p>
-            <p> arr[10] <span class="comment">undefined</span></p>
-            <p><i>arr.length</i> <span class="comment"> 11</span></p>
-            <!-- <details> <pre> <code>
+      <section>
+        <h4>CRUD для ячейки</h4>
+        <p>let arr = [];</p>
+        <p><i>arr.length</i> <span class="comment"> 0</span></p>
+        <h5>Create</h5>
+        <p>arr[10] = 'cell'</p>
+        <p><i>arr.length</i> <span class="comment"> 11</span></p>
+        <h5>Read</h5>
+        <p>arr[10] <span class="comment">cell</span></p>
+        <h5>Update</h5>
+        <p>arr[10] = 'arr cell'</p>
+        <h5>Delete</h5>
+        <p>delete arr[10]</p>
+        <p>arr[10] <span class="comment">undefined</span></p>
+        <p><i>arr.length</i> <span class="comment"> 11</span></p>
+        <!-- <details> <pre> <code>
 
                     </code></pre></details>  -->
-        </section>
-        <section>
-            <h4>Длина массива</h4>
-            <p>let arr = [1,1,1,1,1,1,1,1,1,1];</p>
-            <p><i>arr.length;</i> <span class="comment"> 10</span></p>
-            <h5>Удаление правой части массива</h5>
-            <p>arr.length = 5; <span class="comment"> [1,1,1,1,1]</span></p>
-            <h5>Увеличение длинны массива</h5>
-            <p>arr.length = 10; <span class="comment"> [1,1,1,1,1,,,,,]</span></p>
-            <h5>Доступ к последнему элементу массива</h5>
-            <p>arr[arr.length - 1] = 'end'; <span class="comment"><b>arr.length - 1</b></span></p>
-            <p>arr <span class="comment"> [1,1,1,1,1,,,,,'end']</span></p>
-            <h4>Иммутабельность строк. Мутабельность массивов.</h4>
-            <details>
-                <pre> <code>
+      </section>
+      <section>
+        <h4>Длина массива</h4>
+        <p>let arr = [1,1,1,1,1,1,1,1,1,1];</p>
+        <p><i>arr.length;</i> <span class="comment"> 10</span></p>
+        <h5>Удаление правой части массива</h5>
+        <p>arr.length = 5; <span class="comment"> [1,1,1,1,1]</span></p>
+        <h5>Увеличение длинны массива</h5>
+        <p>arr.length = 10; <span class="comment"> [1,1,1,1,1,,,,,]</span></p>
+        <h5>Доступ к последнему элементу массива</h5>
+        <p>
+          arr[arr.length - 1] = 'end';
+          <span class="comment"><b>arr.length - 1</b></span>
+        </p>
+        <p>arr <span class="comment"> [1,1,1,1,1,,,,,'end']</span></p>
+        <h4>Иммутабельность строк. Мутабельность массивов.</h4>
+        <details>
+          <pre> <code>
 let str = "<i class="handwriting">abcdefghij</i>";
 str.length; <span class="comment"> 10</span>
 str.length = 5;
@@ -142,245 +186,324 @@ arr.length = 5;
 arr[9] <span class="comment"> undefined</span>
 arr.length; <span class="comment"> 5</span>                        
                     </code></pre>
-            </details>
-        </section>
+        </details>
+      </section>
     </div>
     <div class="wrapper">
-        <section>
-            <h4>Методы массива (CRUD для ячейки)</h4>
-            <p>let arr = new Array(3); <span class="comment"> [,,]</span></p>
-            <p>arr.<b>fill(1)</b> <span class="comment"> [1,1,1]</span></p>
-            <p>arr[arr.length - 1] = 'end'; <span class="comment"> [1,1,'end']</span></p>
-            <p>let addToEnd = arr.<b>push</b>('after end') <span class="comment"> [1,1,'end', 'after end']</span></p>
-            <p>addToEnd <span class="comment">The <b>push</b> return <b>length of array</b> 4</span></p>
-            <p>let delFromEnd = arr.<b>pop()</b> <span class="comment"> [1,1,'end']</span></p>
-            <p>delFromEnd <span class="comment">The <b>pop</b> return <b>deleted element</b> 'after end'</span></p>
-            <p>let addToStart = arr.unshift('start') <span class="comment"> ['start',1,'end']</span></p>
-            <p>addToStart <span class="comment">The <b>unshift</b> return <b>length of array</b> 4</span></p>
-            <p>let delFromStart = arr.<b>shift()</b> <span class="comment"> [1,1,'end']</span></p>
-            <p>delFromStart <span class="comment">The <b>shift</b> return <b>deleted element</b> 'start'</span></p>
-        </section>
-        <section>
-            <h4>Методы <i>строка - массив</i></h4>
-            <p><b>To Array .split()</b></p>
-            <p>let str = "<i class="handwriting">abcdefghij</i>";</p>
-            <p>let arrFromStr = str.<b>split("")</b>; <span class="comment">[ '
-                    <i class="handwriting">a</i>', '
-                    <i class="handwriting">b</i>', '
-                    <i class="handwriting">c</i>', '
-                    <i class="handwriting">d</i>', '
-                    <i class="handwriting">e</i>', '
-                    <i class="handwriting">f</i>', '
-                    <i class="handwriting">g</i>', '
-                    <i class="handwriting">h</i>', '
-                    <i class="handwriting">i</i>', '
-                    <i class="handwriting">j</i>']
-                </span></p>
-            <p>let sentence = "<i class="handwriting">How do you do?</i>";</p>
-            <p>let arrFromSentence = sentence.<b>split(" ")</b>; <span class="comment">[ '
-                    <i class="handwriting">How</i>', '
-                    <i class="handwriting">do</i>', '
-                    <i class="handwriting">you</i>', '
-                    <i class="handwriting">do?</i>' ]
-                </span></p>
-            <p>let uri = "<i class="handwriting">https://goit.ua/course/</i>";</p>
-            <p>let arrFromUri = uri.<b>split("<i class="handwriting">/</i>")</b>; <span class="comment">[ '
-                    <i class="handwriting">https:</i>',, '
-                    <i class="handwriting">goit.ua</i>', '
-                    <i class="handwriting">course</i>', ]
-                </span></p>
-            <p><b>To String .join()</b></p>
-            <p>let toStr = arrFromStr.<b>join("")</b> <span class="comment"> "<i class="handwriting">abcdefghij</i>"</span></p>
-            <p>let toSentence = arrFromSentence.<b>join(" ")</b><span class="comment">"<i class="handwriting">How do you
-                        do?
-                    </i>"</span></p>
-            <p>let toUri = arrFromUri.<b>join("<i class="handwriting">/</i>")</b> <span class="comment">"<i class="handwriting">https://goit.ua/course/</i>"</span></p>
-        </section>
+      <section>
+        <h4>Методы массива (CRUD для ячейки)</h4>
+        <p>let arr = new Array(3); <span class="comment"> [,,]</span></p>
+        <p>arr.<b>fill(1)</b> <span class="comment"> [1,1,1]</span></p>
+        <p>
+          arr[arr.length - 1] = 'end'; <span class="comment"> [1,1,'end']</span>
+        </p>
+        <p>
+          let addToEnd = arr.<b>push</b>('after end')
+          <span class="comment"> [1,1,'end', 'after end']</span>
+        </p>
+        <p>
+          addToEnd
+          <span class="comment"
+            >The <b>push</b> return <b>length of array</b> 4</span
+          >
+        </p>
+        <p>
+          let delFromEnd = arr.<b>pop()</b>
+          <span class="comment"> [1,1,'end']</span>
+        </p>
+        <p>
+          delFromEnd
+          <span class="comment"
+            >The <b>pop</b> return <b>deleted element</b> 'after end'</span
+          >
+        </p>
+        <p>
+          let addToStart = arr.unshift('start')
+          <span class="comment"> ['start',1,'end']</span>
+        </p>
+        <p>
+          addToStart
+          <span class="comment"
+            >The <b>unshift</b> return <b>length of array</b> 4</span
+          >
+        </p>
+        <p>
+          let delFromStart = arr.<b>shift()</b>
+          <span class="comment"> [1,1,'end']</span>
+        </p>
+        <p>
+          delFromStart
+          <span class="comment"
+            >The <b>shift</b> return <b>deleted element</b> 'start'</span
+          >
+        </p>
+      </section>
+      <section>
+        <h4>Методы <i>строка - массив</i></h4>
+        <p><b>To Array .split()</b></p>
+        <p>let str = "<i class="handwriting">abcdefghij</i>";</p>
+        <p>
+          let arrFromStr = str.<b>split("")</b>;
+          <span class="comment"
+            >[ ' <i class="handwriting">a</i>', ' <i class="handwriting">b</i>',
+            ' <i class="handwriting">c</i>', ' <i class="handwriting">d</i>', '
+            <i class="handwriting">e</i>', ' <i class="handwriting">f</i>', '
+            <i class="handwriting">g</i>', ' <i class="handwriting">h</i>', '
+            <i class="handwriting">i</i>', ' <i class="handwriting">j</i>']
+          </span>
+        </p>
+        <p>let sentence = "<i class="handwriting">How do you do?</i>";</p>
+        <p>
+          let arrFromSentence = sentence.<b>split(" ")</b>;
+          <span class="comment"
+            >[ ' <i class="handwriting">How</i>', '
+            <i class="handwriting">do</i>', ' <i class="handwriting">you</i>', '
+            <i class="handwriting">do?</i>' ]
+          </span>
+        </p>
+        <p>let uri = "<i class="handwriting">https://goit.ua/course/</i>";</p>
+        <p>
+          let arrFromUri = uri.<b>split("<i class="handwriting">/</i>")</b>;
+          <span class="comment"
+            >[ ' <i class="handwriting">https:</i>',, '
+            <i class="handwriting">goit.ua</i>', '
+            <i class="handwriting">course</i>', ]
+          </span>
+        </p>
+        <p><b>To String .join()</b></p>
+        <p>
+          let toStr = arrFromStr.<b>join("")</b>
+          <span class="comment"> "<i class="handwriting">abcdefghij</i>"</span>
+        </p>
+        <p>
+          let toSentence = arrFromSentence.<b>join(" ")</b
+          ><span class="comment"
+            >"<i class="handwriting">How do you do? </i>"</span
+          >
+        </p>
+        <p>
+          let toUri = arrFromUri.<b>join("<i class="handwriting">/</i>")</b>
+          <span class="comment"
+            >"<i class="handwriting">https://goit.ua/course/</i>"</span
+          >
+        </p>
+      </section>
     </div>
     <div class="wrapper">
-        <section>
-            <h4>Методы массива <i>similar</i> string</h4>
-            <p><b>Конкатенация .concat()</b></p>
-            <p>let first = ['<i class="handwriting">a</i>', '<i class="handwriting">b</i>']</p>
-            <p>let second = ['<i class="handwriting">c</i>', '<i class="handwriting">d</i>']</p>
-            <p>let adding = first.<b>concat</b>(second) <span class="comment">[ '
-                    <i class="handwriting">a</i>', '
-                    <i class="handwriting">b</i>', '
-                    <i class="handwriting">c</i>', '
-                    <i class="handwriting">d</i>' ]
-                </span></p>
-            <p>let third = ['<i class="handwriting">e</i>', '<i class="handwriting">f</i>']</p>
-            <p>let superAdding = first.<b>concat</b>(second, third) <span class="comment">[ '
-                    <i class="handwriting">a</i>', '
-                    <i class="handwriting">b</i>', '
-                    <i class="handwriting">c</i>', '
-                    <i class="handwriting">d</i>', '
-                    <i class="handwriting">e</i>', '
-                    <i class="handwriting">f</i>' ]
-                </span></p>
-            <details>
-                <p><b>Объединяем массивы в новом массиве</b></p>
-                <pre><code>
+      <section>
+        <h4>Методы массива <i>similar</i> string</h4>
+        <p><b>Конкатенация .concat()</b></p>
+        <p>
+          let first = ['<i class="handwriting">a</i>', '<i class="handwriting"
+            >b</i
+          >']
+        </p>
+        <p>
+          let second = ['<i class="handwriting">c</i>', '<i class="handwriting"
+            >d</i
+          >']
+        </p>
+        <p>
+          let adding = first.<b>concat</b>(second)
+          <span class="comment"
+            >[ ' <i class="handwriting">a</i>', ' <i class="handwriting">b</i>',
+            ' <i class="handwriting">c</i>', ' <i class="handwriting">d</i>' ]
+          </span>
+        </p>
+        <p>
+          let third = ['<i class="handwriting">e</i>', '<i class="handwriting"
+            >f</i
+          >']
+        </p>
+        <p>
+          let superAdding = first.<b>concat</b>(second, third)
+          <span class="comment"
+            >[ ' <i class="handwriting">a</i>', ' <i class="handwriting">b</i>',
+            ' <i class="handwriting">c</i>', ' <i class="handwriting">d</i>', '
+            <i class="handwriting">e</i>', ' <i class="handwriting">f</i>' ]
+          </span>
+        </p>
+        <details>
+          <p><b>Объединяем массивы в новом массиве</b></p>
+          <pre><code>
 let first = [10, 20]    
 let second = [30, 40]        
 let adding = 
     [<b>...</b>first, <b>...</b>second]   
 <span class="comment">[10,20,30,40]</span>     
-                </code></pre>                
-            </details>
+                </code></pre>
+        </details>
 
+        <p><b>Получить подмассив .slice()</b></p>
+        <p>
+          let cdef = superAdding.<b>slice</b>(2)
+          <span class="comment">'<i class="handwriting">cdef</i>'</span>
+        </p>
+        <p>
+          let cde = superAdding.<b>slice</b>(2, 5)
+          <span class="comment">'<i class="handwriting">cde</i>'</span>
+        </p>
+        <p>
+          let cdeFromEnd = superAdding.<b>slice</b>(2,-1)
+          <span class="comment">'<i class="handwriting">cde</i>'</span>
+        </p>
+        <p><b>Индекс по значению .indexOf(value)</b></p>
+        <p>
+          [ ' <i class="handwriting">a</i>', ' <i class="handwriting">b</i>', '
+          <i class="handwriting">c</i>', ' <i class="handwriting">d</i>', '
+          <i class="handwriting">e</i>', ' <i class="handwriting">f</i>' ].
+          <b>indexOf('<i class="handwriting">c</i>')</b>
+          <span class="comment"> 2</span>
+        </p>
+        <p>
+          [ ' <i class="handwriting">a</i>', ' <i class="handwriting">b</i>', '
+          <i class="handwriting">c</i>', ' <i class="handwriting">d</i>', '
+          <i class="handwriting">e</i>', ' <i class="handwriting">f</i>' ].
+          <b>indexOf('<i class="handwriting">z</i>')</b>
+          <span class="comment"> -1</span>
+        </p>
+        <p><b>Есть ли такое значение .includes(value)</b></p>
+        <p>
+          [ ' <i class="handwriting">a</i>', ' <i class="handwriting">b</i>', '
+          <i class="handwriting">c</i>', ' <i class="handwriting">d</i>', '
+          <i class="handwriting">e</i>', ' <i class="handwriting">f</i>' ].
+          <b>includes('<i class="handwriting">z</i>')</b>
+          <span class="comment"> false</span>
+        </p>
+      </section>
+      <section>
+        <h4>Методы массива</h4>
+        <p><b>Сортировка .sort()</b></p>
+        <p>[20,100,3,400].sort() <span class="comment"> 100,20,3,400</span></p>
+        <p><b>Обратный порядок .reverse()</b></p>
+        <p>
+          [20,100,3,400].reverse() <span class="comment"> 400,3,100,20</span>
+        </p>
+        <p><b>Обратная сортировка .sort().reverse()</b></p>
+        <p>
+          [20,100,3,400].sort().reverse()
+          <span class="comment"> 400,3,20,100</span>
+        </p>
 
-
-            <p><b>Получить подмассив .slice()</b> </p>
-            <p>let cdef = superAdding.<b>slice</b>(2) <span class="comment">'<i class="handwriting">cdef</i>'</span></p>
-            <p>let cde = superAdding.<b>slice</b>(2, 5) <span class="comment">'<i class="handwriting">cde</i>'</span></p>
-            <p>let cdeFromEnd = superAdding.<b>slice</b>(2,-1) <span class="comment">'<i class="handwriting">cde</i>'</span></p>
-            <p><b>Индекс по значению .indexOf(value)</b></p>
-            <p>[ '
-                <i class="handwriting">a</i>', '
-                <i class="handwriting">b</i>', '
-                <i class="handwriting">c</i>', '
-                <i class="handwriting">d</i>', '
-                <i class="handwriting">e</i>', '
-                <i class="handwriting">f</i>' ].
-                <b>indexOf('<i class="handwriting">c</i>')</b>
-                <span class="comment"> 2</span>
-            </p>
-            <p>[ '
-                <i class="handwriting">a</i>', '
-                <i class="handwriting">b</i>', '
-                <i class="handwriting">c</i>', '
-                <i class="handwriting">d</i>', '
-                <i class="handwriting">e</i>', '
-                <i class="handwriting">f</i>' ].
-                <b>indexOf('<i class="handwriting">z</i>')</b>
-                <span class="comment"> -1</span>
-            </p>
-            <p><b>Есть ли такое значение .includes(value)</b></p>
-            <p>[ '
-                <i class="handwriting">a</i>', '
-                <i class="handwriting">b</i>', '
-                <i class="handwriting">c</i>', '
-                <i class="handwriting">d</i>', '
-                <i class="handwriting">e</i>', '
-                <i class="handwriting">f</i>' ].
-                <b>includes('<i class="handwriting">z</i>')</b>
-                <span class="comment"> false</span>
-            </p>
-        </section>
-        <section>
-            <h4>Методы массива</h4>
-            <p><b>Сортировка .sort()</b> </p>
-            <p>[20,100,3,400].sort() <span class="comment"> 100,20,3,400</span></p>
-            <p><b>Обратный порядок .reverse()</b> </p>
-            <p>[20,100,3,400].reverse() <span class="comment"> 400,3,100,20</span></p>
-            <p><b>Обратная сортировка .sort().reverse()</b> </p>
-            <p>[20,100,3,400].sort().reverse() <span class="comment"> 400,3,20,100</span></p>
-
-            <details>
-                <p>Забегаем вперед - задаем правило сортировки с помощью стрелочной функции</p>
-                <p>Если функция возвращает 0, то элементы равны и не перемещаются.</p>
-                <p>Если функция возвращает 1, то элементы размещаются от меньшего к большему.</p>
-                <p>Если функция возвращает -1, то элементы размещаются от большего к меньшему.</p>
-                <pre><code>
+        <details>
+          <p>
+            Забегаем вперед - задаем правило сортировки с помощью стрелочной
+            функции
+          </p>
+          <p>Если функция возвращает 0, то элементы равны и не перемещаются.</p>
+          <p>
+            Если функция возвращает 1, то элементы размещаются от меньшего к
+            большему.
+          </p>
+          <p>
+            Если функция возвращает -1, то элементы размещаются от большего к
+            меньшему.
+          </p>
+          <pre><code>
 array.sort(callback) 
 <span class="comment">callback - 
     функция сортировки</span>                    
 [20,100,3,400].sort(<b>(a,b) =&gt; a - b</b>) 
 <span class="comment"> 3,20,100,400</span>                    
                 </code></pre>
-            </details>
-            <p><b>Деструктуризация массивов</b></p>
-            <p>let arr = [10, 20, 30] </p>
-            <p>let ten = arr[0]</p>
-            <p>let twenty = arr[1]</p>
-            <p>let thirty = arr[2]</p>
-            <p>Как упростить ? Деструктуризация</p>
-            <p> Структура массива - это порядок в расположении элементов. Упростить присвоение значений из массива можно,
-                если использовать это свойство порядка. Такое использование структуры для извлечения данных называют разбор
-                структуры данных на составные части, т.е. <b>деструктуризация</b>. При этом массив не изменяется.
-            </p>
-            <p>let [ten, twenty, thirty] = [10, 20, 30] </p>
-            <p>ten === 10<span class="comment"> true</span></p>
-            <p>twenty === 20<span class="comment"> true</span></p>
-            <p>thirty === 30<span class="comment"> true</span></p>
-            <details>
-                <p>Забегаем вперед - используем оператор <b>...</b> spread</p>
-                <pre><code>
+        </details>
+        <p><b>Деструктуризация массивов</b></p>
+        <p>let arr = [10, 20, 30]</p>
+        <p>let ten = arr[0]</p>
+        <p>let twenty = arr[1]</p>
+        <p>let thirty = arr[2]</p>
+        <p>Как упростить ? Деструктуризация</p>
+        <p>
+          Структура массива - это порядок в расположении элементов. Упростить
+          присвоение значений из массива можно, если использовать это свойство
+          порядка. Такое использование структуры для извлечения данных называют
+          разбор структуры данных на составные части, т.е.
+          <b>деструктуризация</b>. При этом массив не изменяется.
+        </p>
+        <p>let [ten, twenty, thirty] = [10, 20, 30]</p>
+        <p>ten === 10<span class="comment"> true</span></p>
+        <p>twenty === 20<span class="comment"> true</span></p>
+        <p>thirty === 30<span class="comment"> true</span></p>
+        <details>
+          <p>Забегаем вперед - используем оператор <b>...</b> spread</p>
+          <pre><code>
 let [ten, <b>...</b>restOfArr] 
     = [10, 20, 30]
 ten <span class="comment"> 10</span>              
 restOfArr <span class="comment"> [20, 30]</span>      
                 </code></pre>
-    
-            </details>
-        </section>
+        </details>
+      </section>
     </div>
     <div class="wrapper">
-        <section>
-            <table>
-                <caption>
-                    <h4>Передача по ссылке и по значению</h4>
-                </caption>
-                <thead>
-                    <th>объявление </th>
-                    <th>переменных</th>
-                    <tr>
-                        <td>let byValue;</td>
-                        <td>let array;</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>By value</th>
-                        <th>By link</th>
-                    </tr>
-                    <tr>
-                        <td>byValue = 10</td>
-                        <td>array = [10]</td>
-                    </tr>
-                    <tr>
-                        <td>let betaByValue = byValue</td>
-                        <td>let betaArray = array</td>
-                    </tr>
-                    <tr>
-                        <td>betaValue = "<i class="handwriting">Ups</i>"</td>
-                        <td>betaArray[0] = "<i class="handwriting">Ups</i>"</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td class="parentHideElem">byValue ? <span class="hideElem">10</span> </td>
-                        <td class="parentHideElem">array[0] ? <span class="hideElem">"<i class="handwriting">Ups</i>"</span>
-                            </td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-        <section>
-            <h4>Копирование массивов</h4>
-            <p><b>не копирование</b></p>
-            <p>let arr = [10]</p>
-            <p>let bar = arr</p>
-            <p>bar === arr <span class="comment"> true</span></p>
-            <p><b>копирование</b></p>
-            <p>bar = [];</p>
-            <p>bar[0] = arr[0];</p>
-            <p>bar === arr <span class="comment"> false</span></p>
-            <p>bar[0] === arr[0] <span class="comment"> true</span></p>
-            <p><b>методы для копирования</b> </p>
-            <p><b>concat</b></p>
-            <p>let arr = [10]</p>
-            <p>let bar = [].concat(arr)</p>
-            <p>bar === arr <span class="comment"> false</span></p>
-            <p><b>slice</b></p>
-            <p>let arr = [10]</p>
-            <p>let bar = arr.slice(0)</p>
-            <p>bar === arr <span class="comment"> false</span></p>
-            <details>
-                <p>Забегаем вперед - используем оператор <b>...</b> spread</p>
-                <p><b>Копируем массив</b></p>
-                <pre><code>
+      <section>
+        <table>
+          <caption>
+            <h4>Передача по ссылке и по значению</h4>
+          </caption>
+          <thead>
+            <th>объявление</th>
+            <th>переменных</th>
+            <tr>
+              <td>let byValue;</td>
+              <td>let array;</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>By value</th>
+              <th>By link</th>
+            </tr>
+            <tr>
+              <td>byValue = 10</td>
+              <td>array = [10]</td>
+            </tr>
+            <tr>
+              <td>let betaByValue = byValue</td>
+              <td>let betaArray = array</td>
+            </tr>
+            <tr>
+              <td>betaValue = "<i class="handwriting">Ups</i>"</td>
+              <td>betaArray[0] = "<i class="handwriting">Ups</i>"</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="parentHideElem">
+                byValue ? <span class="hideElem">10</span>
+              </td>
+              <td class="parentHideElem">
+                array[0] ?
+                <span class="hideElem">"<i class="handwriting">Ups</i>"</span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section>
+        <h4>Копирование массивов</h4>
+        <p><b>не копирование</b></p>
+        <p>let arr = [10]</p>
+        <p>let bar = arr</p>
+        <p>bar === arr <span class="comment"> true</span></p>
+        <p><b>копирование</b></p>
+        <p>bar = [];</p>
+        <p>bar[0] = arr[0];</p>
+        <p>bar === arr <span class="comment"> false</span></p>
+        <p>bar[0] === arr[0] <span class="comment"> true</span></p>
+        <p><b>методы для копирования</b></p>
+        <p><b>concat</b></p>
+        <p>let arr = [10]</p>
+        <p>let bar = [].concat(arr)</p>
+        <p>bar === arr <span class="comment"> false</span></p>
+        <p><b>slice</b></p>
+        <p>let arr = [10]</p>
+        <p>let bar = arr.slice(0)</p>
+        <p>bar === arr <span class="comment"> false</span></p>
+        <details>
+          <p>Забегаем вперед - используем оператор <b>...</b> spread</p>
+          <p><b>Копируем массив</b></p>
+          <pre><code>
 let oldArr = [10, 20]
 let newArr = [<b>...</b>oldArr]     
 <span class="comment">[10,20]</span>
@@ -394,12 +517,9 @@ newArr[0] === oldArr[0]
 newArr[1] === oldArr[1] 
 <span class="comment"> true</span>
                 </code></pre>
-  
-            </details>
-        </section>
-
+        </details>
+      </section>
     </div>
     <script src="./js/app.js"></script>
-</body>
-
+  </body>
 </html>
