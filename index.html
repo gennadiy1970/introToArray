@@ -23,19 +23,19 @@
       <section>
         <h2>Массивы</h2>
         <div class="img-wrp">
-            <img src="./img/railway-wagons.jpg" alt="railway wagons">
+          <img src="./img/railway-wagons.jpg" alt="railway wagons" />
         </div>
       </section>
 
       <section>
-          <pre><code>
+        <pre><code>
 let array = [ "A", "B", "C", "D"];
 
 </code></pre>
         <div class="img-wrp">
           <img src="./img/array.svg" alt="array" />
         </div>
-          <pre><code>
+        <pre><code>
 array[0] // "A"
 array[1] // "B"
 array[2] // "C"
@@ -333,7 +333,6 @@ let adding =
 <span class="comment">[10,20,30,40]</span>     
                 </code></pre>
         </details>
-
         <p><b>Получить подмассив .slice()</b></p>
         <p>
           let cdef = superAdding.<b>slice</b>(2)
@@ -384,7 +383,6 @@ let adding =
           [20,100,3,400].sort().reverse()
           <span class="comment"> 400,3,20,100</span>
         </p>
-
         <details>
           <p>
             Забегаем вперед - задаем правило сортировки с помощью стрелочной
@@ -400,12 +398,11 @@ let adding =
             меньшему.
           </p>
           <pre><code>
-array.sort(callback) 
-<span class="comment">callback - 
-    функция сортировки</span>                    
-[20,100,3,400].sort(<b>(a,b) =&gt; a - b</b>) 
-<span class="comment"> 3,20,100,400</span>                    
-                </code></pre>
+array.sort(callback)
+<span class="comment">callback - функция сортировки</span>
+[20,100,3,400].sort(<b>(a,b) =&gt; a - b</b>)
+<span class="comment"> 3,20,100,400</span>
+            </code></pre>
         </details>
         <p><b>Деструктуризация массивов</b></p>
         <p>let arr = [10, 20, 30]</p>
@@ -429,8 +426,8 @@ array.sort(callback)
           <pre><code>
 let [ten, <b>...</b>restOfArr] 
     = [10, 20, 30]
-ten <span class="comment"> 10</span>              
-restOfArr <span class="comment"> [20, 30]</span>      
+ten <span class="comment"> 10</span>
+restOfArr <span class="comment"> [20, 30]</span>
                 </code></pre>
         </details>
       </section>
